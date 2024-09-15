@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@azure/eventgrid':
+        specifier: ^5.6.0
+        version: 5.6.0
       '@azure/storage-blob':
         specifier: ^12.24.0
         version: 12.24.0
@@ -81,6 +84,9 @@ importers:
       '@swc/helpers':
         specifier: ~0.5.11
         version: 0.5.12
+      '@types/express':
+        specifier: ^4.17.21
+        version: 4.17.21
       '@types/jest':
         specifier: ^29.4.0
         version: 29.5.12
@@ -204,6 +210,10 @@ packages:
 
   '@azure/core-xml@1.4.3':
     resolution: {integrity: sha512-D6G7FEmDiTctPKuWegX2WTrS1enKZwqYwdKTO6ZN6JMigcCehlT0/CYl+zWpI9vQ9frwwp7GQT3/owaEXgnOsA==}
+    engines: {node: '>=18.0.0'}
+
+  '@azure/eventgrid@5.6.0':
+    resolution: {integrity: sha512-2faCzpsmTTX/HVcMOqt6cjvNQTLAjVErisVMYMigvMe0pUWokUeOu36ePyQNY6AkJwelCUED2Z3graKkVvdpuQ==}
     engines: {node: '>=18.0.0'}
 
   '@azure/logger@1.1.4':
@@ -5042,6 +5052,18 @@ snapshots:
     dependencies:
       fast-xml-parser: 4.5.0
       tslib: 2.6.3
+
+  '@azure/eventgrid@5.6.0':
+    dependencies:
+      '@azure/core-auth': 1.7.2
+      '@azure/core-client': 1.9.2
+      '@azure/core-rest-pipeline': 1.16.3
+      '@azure/core-tracing': 1.1.2
+      '@azure/logger': 1.1.4
+      tslib: 2.6.3
+      uuid: 8.3.2
+    transitivePeerDependencies:
+      - supports-color
 
   '@azure/logger@1.1.4':
     dependencies:

@@ -19,6 +19,7 @@
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "@types/express": "^4.17.21",
     "@types/jest": "^29.4.0",
     "@types/node": "~18.16.9",
     "@types/uuid": "^10.0.0",
@@ -36,6 +37,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "@azure/eventgrid": "^5.6.0",
     "@azure/storage-blob": "^12.24.0",
     "@nestjs/common": "^10.0.2",
     "@nestjs/config": "^3.2.3",
