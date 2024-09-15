@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { BlobStorageModule } from '../blob-storage/blob-storage.module';
+import { EventGridModule } from '../event-grid/event-grid.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { BlobStorageModule } from '../blob-storage/blob-storage.module';
       // cache: true,
     }),
     BlobStorageModule,
+    EventGridModule,
   ],
   controllers: [AppController],
   providers: [AppService],
